@@ -1,0 +1,64 @@
+// COLOR VARIABLES
+$color-primary: #4A35C5;
+$color-primary-light: #6979F8;
+
+
+$color-secondary: #E5E5E5;
+$color-secondary-light: #F5F5F5;
+
+$color-backgroud: #ffffff;
+
+// FONT VARIABLES
+$font-primary: 'Montserrat', sans-serif;
+
+//Responsive breakpoints
+$bp-largest: 90em; //1440px
+$bp-large: 72em; //1152px
+$bp-medium: 57em; //912px
+$bp-small: 48em; //768px
+$bp-smallest: 27em; //432px
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; // 10px/16px = 62.5 => 1rem = 10px
+  transition: all 0.2s;
+
+  // overflow: hidden;
+  scrollbar-width: none;
+
+  @media only screen and (max-width: $bp-largest) {
+    font-size: 50%;
+  }
+}
+
+body {
+  width: 100%;
+  background-color: $color-backgroud;
+  font-family: $font-primary;
+  font-weight: 300;
+  line-height: 1.6;
+
+  &::-webkit-scrollbar {
+    display: none;
+
+    @media only screen and (max-width: $bp-medium) {
+      position: relative;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+    }
+  }
+}
+
+button {
+  cursor: pointer;
+}
