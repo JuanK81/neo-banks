@@ -2,7 +2,6 @@ import logo from '../assets/logo.png';
 import gearIcon from '../assets/gearIcon.png';
 
 const Header = () => {
-  console.log('header');
   return (
     <header className="header">
       <div className="header-logo">

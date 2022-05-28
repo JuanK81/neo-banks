@@ -81,8 +81,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
-    border: 1px solid hotpink; }
+    align-items: center; }
     .conversion-chart_image {
       margin: 5rem;
       width: 100%; }
@@ -110,8 +109,86 @@ body {
 .expenses {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center; }
+  .expenses-header {
+    width: 100%;
+    padding: 3.2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+  .expenses-title {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 2.4rem;
+    line-height: 132%;
+    color: #333; }
+  .expenses-menu {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 0.1rem solid #E5E5E5;
+    border-radius: 0.4rem;
+    background: none;
+    padding: 0.5rem 1.5rem; }
+    .expenses-menu-calendar {
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center; }
+      .expenses-menu-calendar-range {
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 1.4rem;
+        line-height: 2rem;
+        color: #333;
+        padding: 0 0.8rem; }
+      .expenses-menu-calendar-image {
+        padding-left: 1rem; }
+  .expenses-graph {
+    width: 95%; }
+    .expenses-graph_scale {
+      border: 1px solid red; }
+  .expenses-total {
+    margin: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-self: flex-start; }
+    .expenses-total_text {
+      font-family: 'Montserrat';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 1.2rem;
+      line-height: 1.6rem;
+      color: #9C9C9C; }
+    .expenses-total_amount {
+      font-family: 'Montserrat';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 2.4rem;
+      line-height: 132%;
+      color: #333; }
+    .expenses-total_growth {
+      display: flex;
+      justify-content: start;
+      align-items: center;
+      align-self: flex-start; }
+      .expenses-total_growth p {
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 1.2rem; }
+      .expenses-total_growth--sign {
+        margin-right: 1rem;
+        height: 1.1rem; }
+
+.green {
+  color: #4AAF05; }
+
+.red {
+  color: #b91402; }
 
 .header {
   width: 100vw;
@@ -144,10 +221,17 @@ body {
   justify-content: center;
   align-items: center; }
   .key-color {
-    width: .8rem;
-    height: .8rem;
+    width: 0.8rem;
+    height: 0.8rem;
     border-radius: 50%;
     margin-right: 1.6rem; }
+  .key-text {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.2rem;
+    line-height: 1.6rem;
+    color: #9C9C9C; }
 
 .blue {
   background-color: #007AFF; }

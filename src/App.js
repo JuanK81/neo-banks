@@ -14,7 +14,7 @@ function App() {
         <Transaction item="item-1" amount="35" period="last month" />
         <Transaction item="item-2" amount="3" period="today" />
         <Conversion item='item-3' />
-        <Expenses title='weekly expenses' item='item-4'/>
+        <Expenses start='Oct' end='Nov' year='2019' title='Weekly expenses' total='$76685.41' growth='7.00' isPositive={true} item='item-4'/>
       </MainContent>
     </div>
   );
