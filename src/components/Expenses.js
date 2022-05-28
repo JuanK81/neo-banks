@@ -1,4 +1,3 @@
-// import areaImg from '../assets/Area_1.png';
 import scaleImg from '../assets/graphScale.png';
 import calendarIcon from '../assets/calendarIcon.png';
 import arrowUp from '../assets/arrowUp.png';
@@ -6,16 +5,8 @@ import arrowDown from '../assets/arrowDown.png';
 import Container from './Container';
 
 const Expenses = (props) => {
-//   const graphImg = {
-//     width: '100%',
-//     height: '20vw',
-//     backgroundImage: `url(${areaImg})`,
-//     backgroundPosition: 'center',
-//     backgroundSize: 'contain',
-//     backgroundRepeat: 'no-repeat',
-//   };
+
   const graphScale = {
-    // width: '95%',
     height: '28vw',
     backgroundImage: `url(${scaleImg})`,
     backgroundPosition: 'center',
@@ -29,7 +20,7 @@ const Expenses = (props) => {
         <h3 className="expenses-title">{props.title}</h3>
         <div className="expenses-menu">
           <div className="expenses-menu-calendar">
-            <p className="expenses-menu-calendar-range">{`${props.start} - ${props.end}`}</p>{' '}
+            <p className="expenses-menu-calendar-range">{`${props.start} - ${props.end}`}</p>
             <p className="expenses-menu-calendar-range">{props.year}</p>
             <img
               className="expenses-menu-calendar-image"
@@ -41,7 +32,6 @@ const Expenses = (props) => {
       </div>
       <div className="expenses-graph">
         <div className="expenses-graph_scale" style={graphScale}>
-          {/* <div className="expenses-graph_image" style={graphImg}></div> */}
         </div>
       </div>
       <div className="expenses-total">

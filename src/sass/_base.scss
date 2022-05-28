@@ -17,6 +17,9 @@ $color-green-1: #4AAF05;
 $color-red-1: #b91402;
 
 $color-backgroud: #ffffff;
+$color-backgroud-mobil: #f2f6f9;
+
+
 
 // FONT VARIABLES
 $font-primary: 'Montserrat', sans-serif;
@@ -76,4 +79,9 @@ button {
 
 .app {
   height: 100vh;
+
+  @media only screen and (max-width: $bp-small) {
+    
+    background-color: $color-backgroud-mobil;
+  }
 }

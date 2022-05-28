@@ -7,7 +7,7 @@ const Conversion = (props) => {
   return (
     <Container cssClass={`conversion ${props.item}`}>
       <div className="conversion-header">
-        <h3 className="conversion-title">Conversions</h3>
+        <h3 className="conversion-title">Conversion</h3>
         <div className="conversion-menu">
           <img className="conversion-menu_image" src={menuDots} alt="" />
         </div>

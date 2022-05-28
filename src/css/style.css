@@ -36,6 +36,9 @@ button {
 
 .app {
   height: 100vh; }
+  @media only screen and (max-width: 45em) {
+    .app {
+      background-color: #f2f6f9; } }
 
 body {
   margin: 0;
@@ -46,6 +49,10 @@ body {
 .container {
   border: 0.1rem solid #E5E5E5;
   border-radius: 1rem; }
+  @media only screen and (max-width: 45em) {
+    .container {
+      border: none;
+      box-shadow: 0.3rem 2rem 3rem 0.8rem rgba(0, 0, 0, 0.149); } }
 
 .conversion {
   height: 100%;
@@ -84,7 +91,7 @@ body {
     justify-content: center;
     align-items: center; }
     .conversion-chart_image {
-      margin: 5rem;
+      margin-bottom: 5rem;
       min-width: 25rem;
       max-width: 100%; }
       @media only screen and (max-width: 45em) {
@@ -98,9 +105,14 @@ body {
 
 .dashboard {
   display: flex;
+  flex-direction: column;
   width: 100vw;
   background-color: #F5F5F5;
   padding: 1.8rem; }
+  @media only screen and (max-width: 45em) {
+    .dashboard {
+      background-color: #f2f6f9;
+      margin-left: .8rem; } }
   .dashboard p {
     margin-left: 1.6rem;
     font-family: 'Montserrat';
@@ -109,7 +121,25 @@ body {
     font-size: 1.4rem;
     line-height: 2rem;
     letter-spacing: 0.25px;
-    color: #000000; }
+    color: #000; }
+    @media only screen and (max-width: 45em) {
+      .dashboard p {
+        margin-left: -0.1rem;
+        font-size: 1.8rem;
+        background-color: #f2f6f9; } }
+  .dashboard h3 {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 3rem;
+    line-height: 4rem;
+    color: #000; }
+  .dashboard-subtitle {
+    display: flex;
+    justify-content: flex-start;
+    align-items: baseline; }
+    .dashboard-subtitle-bars {
+      width: 1.5rem; }
 
 .expenses {
   display: flex;
@@ -149,11 +179,11 @@ body {
       .expenses-menu-calendar-range {
         font-family: 'Montserrat';
         font-style: normal;
-        font-weight: 400;
+        font-weight: 700;
         font-size: 1.4rem;
         line-height: 2rem;
         color: #333;
-        padding: 0 0.8rem; }
+        padding: 0 0.4rem; }
       .expenses-menu-calendar-image {
         padding-left: 1rem; }
   .expenses-graph {
@@ -179,7 +209,7 @@ body {
       color: #333; }
     .expenses-total_growth {
       display: flex;
-      justify-content: start;
+      justify-content: flex-start;
       align-items: center;
       align-self: flex-start; }
       .expenses-total_growth p {
@@ -205,6 +235,9 @@ body {
   align-items: center;
   justify-content: space-between;
   padding: 1.6rem 2.4rem; }
+  @media only screen and (max-width: 45em) {
+    .header {
+      margin-top: 1rem; } }
   .header-logo {
     display: flex;
     flex-direction: row;
@@ -212,6 +245,9 @@ body {
     align-items: center; }
     .header-logo-image {
       height: 2.5rem; }
+      @media only screen and (max-width: 45em) {
+        .header-logo-image {
+          height: 3rem; } }
     .header-logo-text {
       padding: 0;
       margin: 0;
@@ -222,6 +258,9 @@ body {
       letter-spacing: 0.025rem;
       text-transform: uppercase;
       color: #4A35C5; }
+      @media only screen and (max-width: 45em) {
+        .header-logo-text {
+          font-size: 4rem; } }
 
 .key {
   display: flex;
@@ -262,8 +301,10 @@ body {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
       grid-template-rows: repeat(5, 1fr);
-      column-gap: 1.5rem;
-      row-gap: 1.5rem; } }
+      column-gap: 3rem;
+      row-gap: 3.5rem;
+      padding-bottom: 15rem;
+      background-color: #f2f6f9; } }
 
 .item-1 {
   grid-row: 1 / span 1;
@@ -297,12 +338,33 @@ body {
       grid-row: 4 / span 2;
       grid-column: 1 / span 2; } }
 
+.mobil {
+  width: 100%;
+  position: fixed;
+  bottom: 5rem; }
+  .mobil-nav {
+    margin: 0 auto;
+    height: 8rem;
+    background-color: #4A35C5;
+    border-radius: 10rem;
+    max-width: 90%; }
+    .mobil-nav-buttons {
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+      height: 100%; }
+      .mobil-nav-buttons-icon {
+        height: 3rem; }
+
 .transaction {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   padding: 1.4rem; }
+  @media only screen and (max-width: 45em) {
+    .transaction {
+      aspect-ratio: 1; } }
   .transaction-title {
     font-family: 'Montserrat';
     font-style: normal;
@@ -310,20 +372,34 @@ body {
     font-size: 1.5rem;
     line-height: 2rem;
     color: #333; }
+    @media only screen and (max-width: 45em) {
+      .transaction-title {
+        margin-bottom: 2.5rem;
+        font-size: 2rem; } }
   .transaction-amount {
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 500;
-    font-size: 4.8rem;
+    font-size: 5.5rem;
     line-height: 6rem;
     color: #6979F8;
     margin-top: 1.25rem;
-    padding: .5rem; }
+    padding: 0.5rem; }
+    @media only screen and (max-width: 45em) {
+      .transaction-amount {
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        font-size: 7rem; } }
   .transaction-period {
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 400;
     font-size: 1.2rem;
-    line-height: 1.2rem;
+    line-height: 0.8rem;
     margin: 1.4rem;
-    color: #999999; }
+    margin-bottom: -0.4rem;
+    color: #999999;
+    text-transform: uppercase; }
+    @media only screen and (max-width: 45em) {
+      .transaction-period {
+        margin-bottom: -1.5rem; } }
