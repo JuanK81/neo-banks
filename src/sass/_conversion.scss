@@ -3,6 +3,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding-bottom: 3rem;
 
   &-header {
     width: 100%;
@@ -43,10 +44,14 @@
     justify-content: center;
     align-items: center;
 
-
     &_image {
       margin: 5rem;
-      width: 100%;
+      min-width: 25rem;
+      max-width: 100%;
+
+      @media only screen and (max-width: $bp-small) {
+        min-width: 15rem;
+      }
     }
 
     &_keys {

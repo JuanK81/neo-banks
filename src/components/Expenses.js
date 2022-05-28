@@ -16,11 +16,12 @@ const Expenses = (props) => {
 //   };
   const graphScale = {
     // width: '95%',
-    height: '30vw',
+    height: '28vw',
     backgroundImage: `url(${scaleImg})`,
     backgroundPosition: 'center',
     backgroundSize: 'cover',
     backgroundRepeat: 'no-repeat',
+    
   };
   return (
     <Container cssClass={`expenses ${props.item}`}>

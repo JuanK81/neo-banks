@@ -3,6 +3,12 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
+  min-width: 50rem;
+
+
+   @media only screen and (max-width: $bp-small) {
+        min-width: 15rem;
+      }
 
   &-header {
     width: 100%;
@@ -53,13 +59,13 @@
   }
 
   &-graph {
-    width: 95%;
+    width: 85%;
+    
 
-    &_scale {
+    // &_scale {
 
-      border: 1px solid rgb(255, 0, 0);
-      //   grid-column: 1 / span 6;
-    }
+ 
+    // }
   }
 
   &-total {

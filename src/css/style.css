@@ -51,7 +51,8 @@ body {
   height: 100%;
   display: flex;
   flex-direction: column;
-  align-items: center; }
+  align-items: center;
+  padding-bottom: 3rem; }
   .conversion-header {
     width: 100%;
     padding: 3.2rem;
@@ -84,7 +85,11 @@ body {
     align-items: center; }
     .conversion-chart_image {
       margin: 5rem;
-      width: 100%; }
+      min-width: 25rem;
+      max-width: 100%; }
+      @media only screen and (max-width: 45em) {
+        .conversion-chart_image {
+          min-width: 15rem; } }
     .conversion-chart_keys {
       width: 100%;
       display: flex;
@@ -110,7 +115,11 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  align-items: center; }
+  align-items: center;
+  min-width: 50rem; }
+  @media only screen and (max-width: 45em) {
+    .expenses {
+      min-width: 15rem; } }
   .expenses-header {
     width: 100%;
     padding: 3.2rem;
@@ -148,9 +157,7 @@ body {
       .expenses-menu-calendar-image {
         padding-left: 1rem; }
   .expenses-graph {
-    width: 95%; }
-    .expenses-graph_scale {
-      border: 1px solid red; }
+    width: 85%; }
   .expenses-total {
     margin: 1.5rem;
     display: flex;
@@ -250,22 +257,45 @@ body {
   grid-template-rows: repeat(4, 1fr);
   column-gap: 2.2rem;
   row-gap: 1.5rem; }
+  @media only screen and (max-width: 45em) {
+    .main-content {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(5, 1fr);
+      column-gap: 1.5rem;
+      row-gap: 1.5rem; } }
 
 .item-1 {
   grid-row: 1 / span 1;
   grid-column: 1 / span 1; }
+  @media only screen and (max-width: 45em) {
+    .item-1 {
+      grid-row: 1 / span 1;
+      grid-column: 1 / span 1; } }
 
 .item-2 {
   grid-row: 1 / span 1;
   grid-column: 2 / span 1; }
+  @media only screen and (max-width: 45em) {
+    .item-2 {
+      grid-row: 1 / span 1;
+      grid-column: 2 / span 1; } }
 
 .item-3 {
-  grid-row: 2/ span 3;
+  grid-row: 2 / span 3;
   grid-column: 1 / span 2; }
+  @media only screen and (max-width: 45em) {
+    .item-3 {
+      grid-row: 2 / span 2;
+      grid-column: 1 / span 2; } }
 
 .item-4 {
-  grid-row: 1/ span 4;
+  grid-row: 1 / span 4;
   grid-column: 3 / span 4; }
+  @media only screen and (max-width: 45em) {
+    .item-4 {
+      grid-row: 4 / span 2;
+      grid-column: 1 / span 2; } }
 
 .transaction {
   display: flex;
