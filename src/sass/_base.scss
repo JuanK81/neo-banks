@@ -7,6 +7,12 @@ $color-secondary: #E5E5E5;
 $color-secondary-light: #F5F5F5;
 $color-secondary-dark: #999999;
 
+$color-tertiary: #333;
+
+$color-blue-1: #007AFF;
+$color-orange-1: #FB8832;
+$color-purple-1: #9B51E0;
+
 $color-backgroud: #ffffff;
 
 // FONT VARIABLES
@@ -62,4 +68,9 @@ body {
 
 button {
   cursor: pointer;
+}
+
+
+.app {
+  height: 100vh;
 }

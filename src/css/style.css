@@ -34,6 +34,9 @@ body {
 button {
   cursor: pointer; }
 
+.app {
+  height: 100vh; }
+
 body {
   margin: 0;
   font-family: 'Montserrat';
@@ -43,6 +46,51 @@ body {
 .container {
   border: 0.1rem solid #E5E5E5;
   border-radius: 1rem; }
+
+.conversion {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  .conversion-header {
+    width: 100%;
+    padding: 3.2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+  .conversion-title {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 2.4rem;
+    line-height: 132%;
+    color: #333; }
+  .conversion-menu {
+    height: 100%;
+    aspect-ratio: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 0.1rem solid #E5E5E5;
+    border-radius: 0.4rem;
+    background: none; }
+    .conversion-menu_image {
+      height: 0.4rem; }
+  .conversion-chart {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid hotpink; }
+    .conversion-chart_image {
+      margin: 5rem;
+      width: 100%; }
+    .conversion-chart_keys {
+      width: 100%;
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center; }
 
 .dashboard {
   display: flex;
@@ -58,6 +106,12 @@ body {
     line-height: 2rem;
     letter-spacing: 0.25px;
     color: #000000; }
+
+.expenses {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
 
 .header {
   width: 100vw;
@@ -85,10 +139,28 @@ body {
       text-transform: uppercase;
       color: #4A35C5; }
 
+.key {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .key-color {
+    width: .8rem;
+    height: .8rem;
+    border-radius: 50%;
+    margin-right: 1.6rem; }
+
+.blue {
+  background-color: #007AFF; }
+
+.orange {
+  background-color: #FB8832; }
+
+.purple {
+  background-color: #9B51E0; }
+
 .main-content {
-  width: 100vw;
-  height: 100%;
   margin: 2.4rem 1.6rem;
+  padding: 0rem 1.4rem 3rem 1.4rem;
   display: grid;
   grid-template-columns: repeat(6, 1fr);
   grid-template-rows: repeat(4, 1fr);
@@ -103,6 +175,14 @@ body {
   grid-row: 1 / span 1;
   grid-column: 2 / span 1; }
 
+.item-3 {
+  grid-row: 2/ span 3;
+  grid-column: 1 / span 2; }
+
+.item-4 {
+  grid-row: 1/ span 4;
+  grid-column: 3 / span 4; }
+
 .transaction {
   display: flex;
   flex-direction: column;
@@ -114,7 +194,8 @@ body {
     font-style: normal;
     font-weight: 700;
     font-size: 1.5rem;
-    line-height: 2rem; }
+    line-height: 2rem;
+    color: #333; }
   .transaction-amount {
     font-family: 'Montserrat';
     font-style: normal;
