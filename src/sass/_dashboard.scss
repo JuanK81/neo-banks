@@ -1,0 +1,21 @@
+.dashboard {
+  display: flex;
+  width: 100vw;
+  background-color: $color-secondary-light;
+  padding: 1.8rem;
+
+
+  p {
+      margin-left: 1.6rem;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.4rem;
+    line-height: 2rem;
+    
+
+    letter-spacing: 0.25px;
+
+    color: #000000;
+  }
+}
